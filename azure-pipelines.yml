@@ -1,4 +1,8 @@
 pr:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    feedsToUse: 'select'
   branches:
     include:
       - dev
