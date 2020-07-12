@@ -10,7 +10,9 @@ pr:
     exclude:
       - docs/*
       - README.md
-
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
 trigger:
  branches:
    include:
